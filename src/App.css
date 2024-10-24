@@ -21,17 +21,37 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/path/to/your/colorful-background.jpg') no-repeat center center/cover;
 }
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: 300px;
 }
 
 li {
   margin: 10px 0;
+  padding: 10px;
   cursor: pointer;
-  color: blue;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 @keyframes logo-spin {
