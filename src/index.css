@@ -23,6 +23,9 @@ a:hover {
 }
 
 body {
+  background: url("assets/colorful-background-texture-multi-color-orange-illustration-3840x2160-3104.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   display: flex;
   place-items: center;
